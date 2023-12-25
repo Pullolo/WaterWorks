@@ -61,7 +61,7 @@ export function DataTable<TData, TValue>({
     })
 
   return (
-    <div>
+    <div className="overflow-auto">
         <div className="flex items-center py-4">
         <div className="flex items-center py-4 mr-4">
             <Select onValueChange={(val) => setSelectedColumn(val)}>

@@ -82,7 +82,7 @@ export default function GraphPage(){
             <div onClick={info} style={{ position: 'absolute', top: '30px', right: '30px', width: '30px', height: '30px', backgroundColor: 'white', zIndex: '1000', border: '1px solid black', borderRadius: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', boxShadow: '0 0 20px -3px black'}}>
                 i
             </div>
-            <div style={{ position: 'absolute', top: '50px', left: '130px', width: '320px', height: '300px', backgroundColor: 'white', zIndex: '1000', border: '1px solid black', borderRadius: '10px', display: infoVisible ? "block" : "none", boxShadow: '0 0 20px -3px black'}}>
+            <div style={{ position: 'absolute', top: '50px', left: '10%', width: '320px', height: '300px', backgroundColor: 'white', zIndex: '1000', border: '1px solid black', borderRadius: '10px', display: infoVisible ? "block" : "none", boxShadow: '0 0 20px -3px black'}}>
                 <div className={styles.wrapper}>
                     <div>
                         <div className={styles.infoTop}><button onClick={() => {setInfoVisible(false)}}>×</button></div>
