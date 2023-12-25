@@ -1,0 +1,28 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 32%, rgba(0,168,255,1) 100%);
+    color: white;
+    text-shadow: -1px -2px 8px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login{
+    background-color: aliceblue;
+    color: black;
+    text-shadow: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color, border-radius .3s;
+}
+
+.login:hover{
+    border-radius: 10px;
+    background-color: rgb(170, 211, 246);
+    transition: background-color, border-radius .3s;
+}
