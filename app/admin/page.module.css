@@ -62,7 +62,8 @@
 }
 
 .section{
-    height: 100%;
+    height: 100vh;
+    overflow: auto;
     background-color: white;
 }
 
