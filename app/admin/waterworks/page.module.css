@@ -27,6 +27,7 @@
     border: 0;
     border-radius: 4px;
     background-color: rgb(170, 0, 0);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,12 +66,12 @@
 .infoBottom{
     display: flex;
     justify-content: center;
-    margin: 20px;
 }
 
 .infoBottom>button{
     border: 0;
     border-radius: 4px;
+    color: white;
     background-color: rgb(170, 0, 0);
     display: flex;
     justify-content: center;
