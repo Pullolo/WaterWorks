@@ -15,7 +15,7 @@ export default function Display({name, data, color, textColor, size, error} : {n
     }, [])
 
     const style : CSSProperties = {
-        backgroundColor: errorVisible ? '#F95E5E' : color,
+        backgroundColor: errorVisible ? '#ff1e00' : color,
         color: errorVisible ? 'black' : textColor,
         width: `${size}px`,
         height: `${size ? size-size/10 : size}px`

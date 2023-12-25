@@ -17,7 +17,7 @@ export default function CustomNode({ data, isConnectable } : {data : any, isConn
     }, [])
 
     return (
-        <div className={styles.node} style={{pointerEvents: 'none', backgroundColor: errorVisible ? '#F95E5E' : getColor(data.type)}}>
+        <div className={styles.node} style={{pointerEvents: 'none', backgroundColor: errorVisible ? '#ff1e00' : getColor(data.type)}}>
             <Handle
                 type="target"
                 position={Position.Top}
