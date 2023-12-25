@@ -14,7 +14,7 @@ export default function CustomNode({ data, isConnectable } : {data : any, isConn
             }, 1000);
             return () => clearInterval(interval);
         }
-    }, [])
+    }, [data.error])
 
     return (
         <div className={styles.node} style={{pointerEvents: 'none', backgroundColor: errorVisible ? '#ff1e00' : getColor(data.type)}}>

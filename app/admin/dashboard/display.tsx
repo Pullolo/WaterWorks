@@ -12,7 +12,7 @@ export default function Display({name, data, color, textColor, size, error} : {n
             }, 1000);
             return () => clearInterval(interval);
         }
-    }, [])
+    }, [error])
 
     const style : CSSProperties = {
         backgroundColor: errorVisible ? '#ff1e00' : color,
