@@ -5,7 +5,8 @@ import {columns} from './columns'
 import { DataTable } from './DataTable'
 import { useState } from 'react'
 import {data} from '@/app/data'
-
+import WaterWorksPieChart from './piechart'
+ 
 export default function DashboardPage(){
     const [selectedColumn, setSelectedColumn] = useState("name")
 
@@ -18,6 +19,11 @@ export default function DashboardPage(){
                     <Display name='Stacji Przemysłowych' data={data.filter((el) => el.type == 'STACJA').length} color='#267763' textColor='white' />
                     <Display name='Źródeł' data={data.filter((el) => el.type == 'ŹRÓDŁO').length} color='#102D77' textColor='white' error={true}  />
                     <Display name='Pozostałych obiektów' data={data.filter((el) => el.type == 'INNE').length} color='#723A37' textColor='white' />
+                </div>
+            </div>
+            <div className={styles.displaySection + " h-80 sm:ml-16 overflow-auto"}>
+                <div style={{minWidth: '610px', height: '100%'}}>
+                    <WaterWorksPieChart />
                 </div>
             </div>
             <div className={styles.tableWrapper}>
